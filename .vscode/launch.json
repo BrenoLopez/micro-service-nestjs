@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+         {
+      "type": "node-terminal",
+      "name": "Debug: dev mode",
+      "request": "launch",
+      "command": "yarn start:dev",
+      "cwd": "${workspaceFolder}"
+    },
+    ],
+    "compounds": []
+}
