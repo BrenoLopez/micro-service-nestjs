@@ -1,5 +1,5 @@
-import { Content } from '../entidades/content.entity';
-import { Notification } from '../entidades/notification.entity';
+import { Content } from '../entities/content.entity';
+import { Notification } from '../entities/notification.entity';
 import { NotificationRepository } from '../repositories/notification.repository';
 
 interface ISendNotificationRequest {
