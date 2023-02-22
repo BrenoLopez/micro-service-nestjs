@@ -25,4 +25,14 @@ describe('Cancel Notification', () => {
       });
     }).rejects.toThrow(NotificationNotFound);
   });
+
+  it('Should not be able to cancel a non existing notification', async () => {
+    const notificationRepository = new InMemoryNotificationRepository();
+    const cancelNotification = new CancelNotification(notificationRepository);
+    expect(() => {
+      return cancelNotification.execute({
+        notificationId: 'any_notification_id',
+      });
+    }).rejects.toThrowError(NotificationNotFound);
+  });
 });

@@ -15,7 +15,6 @@ describe('Find many notifications by recipient', () => {
     const { notifications } = await getrecipientNotificaitons.execute({
       recipientId,
     });
-    console.log(notifications);
     expect(notifications).toHaveLength(2);
     expect(notifications).toEqual(
       expect.arrayContaining([
